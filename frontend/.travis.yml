@@ -1,3 +1,4 @@
+language: generic
 sudo: required
 services:
   - docker
@@ -8,5 +9,3 @@ before_install:
 script:
   - docker run -e CI=true galindo/docker-react npm run test
 
-language: generic
-#auto build test
